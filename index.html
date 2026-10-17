@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%239A6A12%22/%3E%3Ctext x=%2250%22 y=%2270%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-weight=%22bold%22%3E%E2%8C%82%3C/text%3E%3C/svg%3E">
+<title>Phòng mô phỏng Chính phủ số</title>
+<meta name="description" content="Website mô phỏng tương tác cho môn Chiến lược xây dựng và phát triển Chính phủ số: tám buổi học, mỗi buổi một bộ mô phỏng và dữ liệu giả lập của UBND Phường Mẫu để học viên thực hành.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <span class="code">CPS</span>
+  <span class="name">Phòng mô phỏng Chính phủ số</span>
+  <span class="sub">Chiến lược xây dựng và phát triển Chính phủ số · Chương trình Thạc sĩ</span>
+  <span class="sp"></span>
+  <button class="tbtn" id="theme" type="button">Tối</button>
+</header>
+
+<div class="shell">
+  <nav class="rail" id="rail" aria-label="Các buổi học"><div class="railttl">Tám buổi học</div></nav>
+  <main id="main">
+
+  <!-- ======================= TRANG CHỦ ======================= -->
+  <section class="mod home" id="m0">
+    <div class="hero">
+      <h1>Tám buổi học, <em>một phường mẫu</em> để thực hành</h1>
+      <p class="lede">Mỗi buổi học của môn <b>Chiến lược xây dựng và phát triển Chính phủ số</b> có một bộ mô phỏng chạy ngay trên trình duyệt. Bối cảnh xuyên suốt là <b>UBND Phường Mẫu, Tỉnh Mẫu</b>, một đơn vị cấp xã hư cấu trong mô hình chính quyền địa phương hai cấp từ 01/7/2025: sổ hồ sơ thủ tục hành chính, kiểm kê hệ thống thông tin, trích xuất dân cư cần làm sạch, khảo sát năng lực cán bộ, bảng chỉ số theo quý. Học viên đổi tham số, chấm điểm, phân loại, lập kế hoạch, rồi tải kết quả về nộp.</p>
+    </div>
+    <div class="note eve" style="margin:0 0 18px;max-width:90ch"><b>Môi trường đào tạo.</b> Mọi tên người, địa danh, mức phí, số liệu của Phường Mẫu đều hư cấu và không có giá trị pháp lý. Chỉ phần văn bản pháp luật và số liệu xếp hạng quốc tế là dữ liệu thật, đã kiểm chứng đến 24/9/2026.</div>
+    <div class="legend" aria-label="Quy ước màu">
+      <span style="--c:var(--pt)">Người dân / dịch vụ</span>
+      <span style="--c:var(--key)">Văn bản pháp luật / chỉ tiêu</span>
+      <span style="--c:var(--ct)">Dữ liệu</span>
+      <span style="--c:var(--eve)">Rủi ro / lỗi / cảnh báo</span>
+      <span style="--c:var(--ok)">Đạt / đúng</span>
+      <span style="--c:var(--aqua)">Cơ quan nhà nước / hạ tầng</span>
+    </div>
+    <div class="grid6" id="cards"></div>
+    <div class="teach">
+      <h3>Cách dùng khi giảng và khi thực hành</h3>
+      <ul>
+        <li><b>Mở đúng tab theo tiến độ bài giảng.</b> Mỗi tab có đường dẫn riêng (ví dụ <code>#m5-chatluong</code>) để dán vào slide hoặc gửi cho lớp. Mỗi tab mở sẵn một ví dụ mẫu; hãy hỏi học viên dự đoán kết quả trước khi đổi tham số.</li>
+        <li><b>Dữ liệu giả lập để thực hành.</b> Các bộ dữ liệu của Phường Mẫu dùng trong mô phỏng đều tải được dưới dạng CSV ở mục <a href="#m0-dulieu" onclick="document.getElementById('dulieu').scrollIntoView();return false;">Dữ liệu thực hành</a> bên dưới, mở bằng Excel hoặc Google Sheets.</li>
+        <li><b>Bài làm lưu trên máy của học viên.</b> Bảng chấm điểm, bản đồ căn cứ pháp lý, khung KPI, kế hoạch chuyển đổi số… được lưu trong trình duyệt và xuất ra CSV/văn bản để nộp. Không có máy chủ, không thu thập dữ liệu.</li>
+        <li><b>Căn cứ pháp lý luôn hiện kèm.</b> Mọi quy tắc trong mô phỏng (toàn trình hay một phần, chỉ hỏi một lần, cấp độ an toàn hệ thống thông tin, danh mục cơ sở dữ liệu quốc gia…) đều ghi rõ văn bản và điều khoản đang áp dụng, cùng cảnh báo khi một văn bản đã hết hiệu lực.</li>
+      </ul>
+      <p class="src">Nguồn nội dung: bộ slide Bài 1–10 và tệp căn cứ pháp lý của môn học (chốt 24/9/2026); UN E-Government Survey 2014–2024; OECD Digital Government Policy Framework.</p>
+    </div>
+    <div class="teach" id="dulieu" style="margin-top:14px">
+      <h3>Dữ liệu thực hành (CSV, UTF-8, mở bằng Excel)</h3>
+      <ul>
+        <li><a href="data/ho_so_tthc_phuong_mau.csv" download>ho_so_tthc_phuong_mau.csv</a> — 1.500 hồ sơ thủ tục hành chính của Phường Mẫu, 01/2025–09/2026: thủ tục, mức độ, kênh nộp, thời hạn, đúng hạn, bổ sung, thanh toán, số hoá, hài lòng. Dùng ở Buổi 1, 6, 8.</li>
+        <li><a href="data/dan_cu_mau_can_lam_sach.csv" download>dan_cu_mau_can_lam_sach.csv</a> — 408 bản ghi dân cư hư cấu có gieo khoảng 60 lỗi chất lượng thuộc 8 loại. Dùng ở Buổi 5.</li>
+        <li><a href="data/du_lieu_mo_diem_phuc_vu.csv" download>du_lieu_mo_diem_phuc_vu.csv</a> — bộ dữ liệu mở mẫu: 46 điểm phục vụ công cộng trên địa bàn phường, kèm <a href="data/mo_ta_bo_du_lieu.json" download>dữ liệu đặc tả</a>. Dùng ở Buổi 5.</li>
+        <li><a href="data/kiem_ke_he_thong_thong_tin.csv" download>kiem_ke_he_thong_thong_tin.csv</a> — kiểm kê 18 hệ thống thông tin đang dùng tại đơn vị. Dùng ở Buổi 4, 7.</li>
+        <li><a href="data/kpi_chuyen_doi_so_theo_quy.csv" download>kpi_chuyen_doi_so_theo_quy.csv</a> — 10 chỉ số chuyển đổi số theo quý, 2024Q1–2026Q3. Dùng ở Buổi 8.</li>
+        <li><a href="data/khao_sat_nang_luc_so_can_bo.csv" download>khao_sat_nang_luc_so_can_bo.csv</a> — khảo sát 8 kỹ năng số của 50 cán bộ. Dùng ở Buổi 8.</li>
+        <li><a href="data/danh_muc_van_ban_phap_ly.csv" download>danh_muc_van_ban_phap_ly.csv</a> — 40 văn bản về Chính phủ số với tình trạng hiệu lực (dữ liệu thật). Dùng ở Buổi 2.</li>
+        <li><a href="data/egdi_viet_nam_2014_2024.csv" download>egdi_viet_nam_2014_2024.csv</a> — xếp hạng EGDI của Việt Nam qua sáu kỳ khảo sát (dữ liệu thật). Dùng ở Buổi 1, 3.</li>
+      </ul>
+      <p class="src">Toàn bộ dữ liệu được sinh bằng mã nguồn <code>_build/gen_data.py</code> với mầm ngẫu nhiên cố định, nên có thể sinh lại y hệt hoặc đổi mầm để ra bộ đề mới cho lớp khác.</p>
+    </div>
+  </section>
+
+  <!-- ======================= BUỔI 1 ======================= -->
+  <section class="mod" id="m1">
+    <header class="mhead">
+      <div class="chips"><span class="chip k">Buổi 1</span><span class="chip">Bài 1 · Tổng quan về Chính phủ số</span><span class="chip">NQ 57-NQ/TW · QĐ 1266/QĐ-TTg · EGDI 2024</span></div>
+      <h2>Tổng quan về Chính phủ số</h2>
+      <p class="lede">Bảy nấc phát triển từ số hoá tới Chính phủ thông minh; bảy điểm khác biệt giữa Chính phủ điện tử và Chính phủ số; năm yếu tố cấu thành tự soi cho đơn vị; vị trí Việt Nam trên bảng xếp hạng EGDI; và một bộ hồ sơ đi đường giấy so với đường số.</p>
+    </header>
+  </section>
+
+  <!-- ======================= BUỔI 2 ======================= -->
+  <section class="mod" id="m2">
+    <header class="mhead">
+      <div class="chips"><span class="chip k">Buổi 2</span><span class="chip">Bài 2 · Khung chính sách và pháp luật</span><span class="chip">40 văn bản đã kiểm chứng</span></div>
+      <h2>Khung chính sách và pháp luật về Chính phủ số</h2>
+      <p class="lede">Bốn tầng văn bản và giá trị pháp lý của từng tầng; dòng thời gian 2015–2026; tra cứu hiệu lực và nhận diện lỗi viện dẫn; lập bản đồ căn cứ pháp lý cho một nhiệm vụ chuyển đổi số của đơn vị; đối chiếu chỉ tiêu 2030.</p>
+    </header>
+  </section>
+
+  <!-- ======================= BUỔI 3 ======================= -->
+  <section class="mod" id="m3">
+    <header class="mhead">
+      <div class="chips"><span class="chip k">Buổi 3</span><span class="chip">Bài 3 · Kinh nghiệm quốc tế và khung đánh giá</span><span class="chip">UN EGDI · OECD</span></div>
+      <h2>Kinh nghiệm quốc tế và các khung đánh giá</h2>
+      <p class="lede">Công thức EGDI và độ nhạy của từng chỉ số thành phần; chặng đường 2014–2024 của Việt Nam; tự chấm cổng thông tin của đơn vị theo bộ tiêu chí rút gọn từ OSI; sáu chiều của khung OECD; bốn bài học Estonia, Hàn Quốc, Singapore, Đan Mạch và giới hạn của việc sao chép.</p>
+    </header>
+  </section>
+
+  <!-- ======================= BUỔI 4 ======================= -->
+  <section class="mod" id="m4">
+    <header class="mhead">
+      <div class="chips"><span class="chip k">Buổi 4</span><span class="chip">Bài 4 · Kiến trúc Chính phủ số 4.0</span><span class="chip">QĐ 292/QĐ-BKHCN</span></div>
+      <h2>Kiến trúc Chính phủ số: Khung Kiến trúc 4.0</h2>
+      <p class="lede">Có và không có kiến trúc tổng thể nhìn trên kiểm kê 18 hệ thống của Phường Mẫu; sơ đồ khái quát Khung 4.0; năm mô hình tham chiếu; phác thảo kiến trúc nghiệp vụ mức 1; phân tích khoảng cách và lộ trình.</p>
+    </header>
+  </section>
+
+  <!-- ======================= BUỔI 5 ======================= -->
+  <section class="mod" id="m5">
+    <header class="mhead">
+      <div class="chips"><span class="chip k">Buổi 5</span><span class="chip">Bài 5 · Dữ liệu số và dữ liệu mở</span><span class="chip">Luật Dữ liệu · NĐ 194/2025 · NĐ 278/2025 · QĐ 11/2026</span></div>
+      <h2>Dữ liệu số: quản trị, kết nối, chia sẻ và dữ liệu mở</h2>
+      <p class="lede">Nguyên tắc chỉ hỏi một lần khi bật và tắt liên thông; danh mục 20 cơ sở dữ liệu quốc gia; làm sạch một trích xuất dân cư theo bốn chữ đúng, đủ, sạch, sống; hệ quả của dữ liệu bẩn khi liên thông; đánh giá một bộ dữ liệu mở theo mô hình 5 sao và ranh giới dữ liệu cá nhân.</p>
+    </header>
+  </section>
+
+  <!-- ======================= BUỔI 6 ======================= -->
+  <section class="mod" id="m6">
+    <header class="mhead">
+      <div class="chips"><span class="chip k">Buổi 6</span><span class="chip">Bài 6 · Dịch vụ công trực tuyến</span><span class="chip">NĐ 42/2022 · NĐ 118/2025 · NĐ 310/2026</span></div>
+      <h2>Dịch vụ công trực tuyến và trải nghiệm người dân</h2>
+      <p class="lede">Phân loại toàn trình hay một phần; sàn tập nộp và xử lý một hồ sơ trọn vẹn ở hai vai người dân và cán bộ Một cửa; từ nhiều cổng xuống một điểm duy nhất; hành trình người dân và bảy điểm nghẽn; phân tích sổ hồ sơ của Phường Mẫu.</p>
+    </header>
+  </section>
+
+  <!-- ======================= BUỔI 7 ======================= -->
+  <section class="mod" id="m7">
+    <header class="mhead">
+      <div class="chips"><span class="chip k">Buổi 7</span><span class="chip">Bài 7 · Hạ tầng, nền tảng, công nghệ</span><span class="chip">Bài 8 · An toàn thông tin và dữ liệu</span><span class="chip">NĐ 45/2026 · Luật 116/2025 · Luật 91/2025</span></div>
+      <h2>Hạ tầng, nền tảng, công nghệ và an toàn thông tin</h2>
+      <p class="lede">Tự xây hay thuê dịch vụ công nghệ thông tin; nền tảng dùng chung so với mỗi nơi tự làm; kiểm chứng câu trả lời của trợ lý ảo; xác định cấp độ an toàn hệ thống thông tin; nhận diện lừa đảo và rủi ro thường gặp; ma trận rủi ro và checklist bảo vệ dữ liệu cá nhân tại Bộ phận Một cửa.</p>
+    </header>
+  </section>
+
+  <!-- ======================= BUỔI 8 ======================= -->
+  <section class="mod" id="m8">
+    <header class="mhead">
+      <div class="chips"><span class="chip k">Buổi 8</span><span class="chip">Bài 9 · Quản trị thực thi và đo lường</span><span class="chip">Bài 10 · Xây dựng chiến lược tại đơn vị</span><span class="chip">QĐ 405/QĐ-BKHCN · QĐ 1266/QĐ-TTg</span></div>
+      <h2>Quản trị thực thi, đo lường và xây dựng chiến lược tại đơn vị</h2>
+      <p class="lede">Bảng điều khiển KPI theo quý của Phường Mẫu; phân biệt đo đầu ra và đo kết quả khi lập khung KPI; đọc khảo sát năng lực số để lên kế hoạch bồi dưỡng; ma trận tác động – khả thi; lộ trình 2026–2030 và mẫu Kế hoạch chuyển đổi số tám mục kèm rubric tự chấm.</p>
+    </header>
+  </section>
+
+  </main>
+</div>
+
+<script src="assets/core.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/m1.js"></script>
+<script src="assets/m2.js"></script>
+<script src="assets/m3.js"></script>
+<script src="assets/m4.js"></script>
+<script src="assets/m5.js"></script>
+<script src="assets/m6.js"></script>
+<script src="assets/m7.js"></script>
+<script src="assets/m8.js"></script>
+<script>
+LAB.boot([
+  { id: "m0", n: "00", title: "Trang chủ", lectures: "Giới thiệu, dữ liệu thực hành" },
+  { id: "m1", n: "01", title: "Tổng quan về Chính phủ số", lectures: "Bài 1", chips: ["Bài 1"], blurb: "Bảy nấc phát triển; bảy điểm khác biệt CPĐT–CPS; năm yếu tố tự soi; EGDI của Việt Nam; hồ sơ giấy so với hồ sơ số." },
+  { id: "m2", n: "02", title: "Khung chính sách và pháp luật", lectures: "Bài 2", chips: ["Bài 2"], blurb: "Bốn tầng văn bản; dòng thời gian 2015–2026; tra cứu hiệu lực, lỗi viện dẫn; bản đồ căn cứ pháp lý; chỉ tiêu 2030." },
+  { id: "m3", n: "03", title: "Kinh nghiệm quốc tế và khung đánh giá", lectures: "Bài 3", chips: ["Bài 3"], blurb: "Công thức EGDI; chặng đường Việt Nam; tự chấm cổng theo OSI rút gọn; sáu chiều OECD; bốn bài học quốc tế." },
+  { id: "m4", n: "04", title: "Kiến trúc Chính phủ số 4.0", lectures: "Bài 4", chips: ["Bài 4"], blurb: "Có hay không có kiến trúc; sơ đồ Khung 4.0; năm mô hình tham chiếu; kiến trúc nghiệp vụ mức 1; khoảng cách và lộ trình." },
+  { id: "m5", n: "05", title: "Dữ liệu số và dữ liệu mở", lectures: "Bài 5", chips: ["Bài 5"], blurb: "Chỉ hỏi một lần; 20 CSDL quốc gia; làm sạch dân cư mẫu; dữ liệu bẩn khi liên thông; dữ liệu mở 5 sao." },
+  { id: "m6", n: "06", title: "Dịch vụ công trực tuyến", lectures: "Bài 6", chips: ["Bài 6"], blurb: "Toàn trình hay một phần; sàn tập hai vai; nhiều cổng về một; hành trình và bảy điểm nghẽn; phân tích sổ hồ sơ." },
+  { id: "m7", n: "07", title: "Hạ tầng, công nghệ và an toàn thông tin", lectures: "Bài 7 · 8", chips: ["Bài 7", "Bài 8"], blurb: "Xây hay thuê; nền tảng dùng chung; kiểm chứng trợ lý ảo; cấp độ hệ thống; lừa đảo và rủi ro; bảo vệ dữ liệu cá nhân." },
+  { id: "m8", n: "08", title: "Quản trị thực thi và chiến lược tại đơn vị", lectures: "Bài 9 · 10", chips: ["Bài 9", "Bài 10"], blurb: "KPI theo quý; đầu ra hay kết quả; năng lực số cán bộ; ma trận tác động – khả thi; kế hoạch 2026–2030 và rubric." }
+]);
+</script>
+</body>
+</html>

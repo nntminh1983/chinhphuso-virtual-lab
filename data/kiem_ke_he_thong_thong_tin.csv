@@ -1,0 +1,19 @@
+﻿ma,ten_he_thong,nghiep_vu_phuc_vu,du_lieu_chinh,loai,nam_dua_vao_su_dung,don_vi_cung_cap,noi_dat,cap_do_attt_da_xac_dinh,ket_noi_nen_tang_chia_se,chi_phi_nam_trieu_dong,tinh_trang
+HT01,Hệ thống thông tin giải quyết TTHC (một cửa điện tử) cấp tỉnh,"Tiếp nhận, xử lý, trả kết quả TTHC",Hồ sơ TTHC,Hệ thống của tỉnh,2023,Doanh nghiệp A,Trung tâm dữ liệu tỉnh,3,Có,0,Đang dùng
+HT02,Cổng Dịch vụ công quốc gia (kết nối),"Nộp hồ sơ trực tuyến, thanh toán","Hồ sơ TTHC, giao dịch",Nền tảng dùng chung quốc gia,2019,Trung ương,Trung ương,4,Có,0,Đang dùng
+HT03,Hệ thống quản lý văn bản và điều hành,"Văn bản đi, đến, ký số, điều hành",Văn bản điện tử,Hệ thống của tỉnh,2020,Doanh nghiệp B,Trung tâm dữ liệu tỉnh,2,Không,0,Đang dùng
+HT04,Phần mềm hộ tịch điện tử dùng chung,Đăng ký hộ tịch,Hộ tịch,Nền tảng dùng chung quốc gia,2016,Bộ Tư pháp,Trung ương,3,Có,0,Đang dùng
+HT05,Phần mềm chứng thực điện tử,"Chứng thực bản sao, chữ ký",Chứng thực,Nền tảng dùng chung quốc gia,2021,Trung ương,Trung ương,2,Có,0,Đang dùng
+HT06,Hệ thống thông tin đất đai (cấp xã truy cập),Biến động đất đai,"Thửa đất, chủ sử dụng",Hệ thống của tỉnh,2022,Doanh nghiệp C,Trung tâm dữ liệu tỉnh,3,Có,0,Đang dùng
+HT07,Phần mềm quản lý hộ kinh doanh (tự mua),Đăng ký hộ kinh doanh,Hộ kinh doanh,Hệ thống đơn vị tự mua,2019,Doanh nghiệp D,Máy chủ tại đơn vị,0,Không,18,Trùng chức năng
+HT08,Phần mềm quản lý đối tượng bảo trợ xã hội,Chi trả trợ cấp,Đối tượng an sinh,Hệ thống của tỉnh,2021,Doanh nghiệp B,Trung tâm dữ liệu tỉnh,2,Không,0,Đang dùng
+HT09,Bảng tính Excel theo dõi hồ sơ xây dựng,Cấp phép xây dựng,Giấy phép xây dựng,Hệ thống đơn vị tự mua,2017,Tự làm,Máy tính cá nhân,0,Không,0,Ít dùng
+HT10,Cổng thông tin điện tử của phường,Công khai thông tin,"Tin bài, văn bản công khai",Hệ thống của tỉnh,2024,Doanh nghiệp A,Trung tâm dữ liệu tỉnh,2,Không,0,Đang dùng
+HT11,Hệ thống thư điện tử công vụ,Trao đổi công việc,Thư điện tử,Hệ thống của tỉnh,2015,Doanh nghiệp B,Trung tâm dữ liệu tỉnh,2,Không,0,Đang dùng
+HT12,Hệ thống hội nghị trực tuyến,Họp trực tuyến tỉnh – xã,Video,Hệ thống của tỉnh,2020,Doanh nghiệp E,Đám mây,1,Không,0,Đang dùng
+HT13,Phần mềm kế toán hành chính sự nghiệp,"Kế toán, ngân sách",Tài chính kế toán,Hệ thống đơn vị tự mua,2018,Doanh nghiệp F,Máy chủ tại đơn vị,0,Không,12,Đang dùng
+HT14,"Phần mềm quản lý cán bộ, công chức (tự mua)",Hồ sơ cán bộ,"Cán bộ, công chức",Hệ thống đơn vị tự mua,2019,Doanh nghiệp D,Máy chủ tại đơn vị,0,Không,9,Trùng chức năng
+HT15,Hệ thống báo cáo điện tử của tỉnh,Báo cáo định kỳ,Số liệu báo cáo,Hệ thống của tỉnh,2022,Doanh nghiệp A,Trung tâm dữ liệu tỉnh,2,Không,0,Ít dùng
+HT16,Nhóm Zalo điều hành nội bộ,"Trao đổi nhanh, chuyển hồ sơ","Tin nhắn, ảnh hồ sơ",Ứng dụng công cộng,2019,Công cộng,Đám mây công cộng,0,Không,0,Đang dùng
+HT17,Camera giám sát khu vực một cửa,An ninh trật tự,Hình ảnh,Hệ thống đơn vị tự mua,2021,Doanh nghiệp G,Máy chủ tại đơn vị,0,Không,4,Đang dùng
+HT18,Ứng dụng phản ánh hiện trường của tỉnh,Tiếp nhận phản ánh của người dân,"Phản ánh, kiến nghị",Hệ thống của tỉnh,2023,Doanh nghiệp E,Đám mây,2,Không,0,Đang dùng

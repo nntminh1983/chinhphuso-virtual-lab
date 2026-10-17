@@ -1,0 +1,147 @@
+{
+ "ho_so": {
+  "ten": "Sổ hồ sơ TTHC của UBND Phường Mẫu 01/2025–09/2026",
+  "tep": "ho_so_tthc_phuong_mau.csv",
+  "cot": [
+   "ma_ho_so",
+   "ma_thu_tuc",
+   "thu_tuc",
+   "linh_vuc",
+   "muc_do_dvctt",
+   "kenh_nop",
+   "ngay_nop",
+   "han_ngay_lam_viec",
+   "ngay_hen_tra",
+   "ngay_tra",
+   "trang_thai",
+   "dung_han",
+   "so_lan_bo_sung",
+   "le_phi_vnd",
+   "thanh_toan_truc_tuyen",
+   "ket_qua_so_hoa",
+   "hai_long_1_5",
+   "nhom_tuoi_nguoi_nop",
+   "can_bo_xu_ly"
+  ],
+  "mo_ta": "Mỗi dòng một hồ sơ; ngày theo ISO yyyy-mm-dd; lệ phí là số mô phỏng; hạn tính theo ngày làm việc."
+ },
+ "dan_cu": {
+  "ten": "Trích xuất dân cư mẫu cần làm sạch",
+  "tep": "dan_cu_mau_can_lam_sach.csv",
+  "cot": [
+   "ma",
+   "ho_ten",
+   "ngay_sinh",
+   "gioi_tinh",
+   "so_dinh_danh",
+   "dia_chi",
+   "so_dien_thoai",
+   "tinh_trang_hon_nhan",
+   "ngay_cap_nhat"
+  ],
+  "mo_ta": "Toàn bộ là NHÂN THÂN HƯ CẤU; đã gieo khoảng 60 lỗi chất lượng thuộc 8 loại để học viên phát hiện."
+ },
+ "diem_phuc_vu": {
+  "ten": "Dữ liệu mở: điểm phục vụ công cộng trên địa bàn Phường Mẫu",
+  "tep": "du_lieu_mo_diem_phuc_vu.csv",
+  "cot": [
+   "ma",
+   "ten_diem",
+   "loai",
+   "dia_chi",
+   "vi_do",
+   "kinh_do",
+   "gio_mo_cua",
+   "dien_thoai_lien_he",
+   "tiep_can_nguoi_khuyet_tat",
+   "ngay_cap_nhat",
+   "dieu_kien_su_dung"
+  ],
+  "mo_ta": "Bộ dữ liệu mở mẫu; toạ độ và số điện thoại hư cấu; điều kiện sử dụng: Công bố mở."
+ },
+ "he_thong": {
+  "ten": "Kiểm kê hệ thống thông tin đang dùng tại đơn vị",
+  "tep": "kiem_ke_he_thong_thong_tin.csv",
+  "cot": [
+   "ma",
+   "ten_he_thong",
+   "nghiep_vu_phuc_vu",
+   "du_lieu_chinh",
+   "loai",
+   "nam_dua_vao_su_dung",
+   "don_vi_cung_cap",
+   "noi_dat",
+   "cap_do_attt_da_xac_dinh",
+   "ket_noi_nen_tang_chia_se",
+   "chi_phi_nam_trieu_dong",
+   "tinh_trang"
+  ],
+  "mo_ta": "18 hệ thống; cấp độ 0 = chưa xác định cấp độ an toàn hệ thống thông tin."
+ },
+ "kpi": {
+  "ten": "KPI chuyển đổi số theo quý 2024Q1–2026Q3",
+  "tep": "kpi_chuyen_doi_so_theo_quy.csv",
+  "cot": [
+   "quy",
+   "ty_le_ho_so_truc_tuyen_pct",
+   "ty_le_ho_so_toan_trinh_pct",
+   "ty_le_dung_han_pct",
+   "ty_le_thanh_toan_truc_tuyen_pct",
+   "ty_le_ket_qua_so_hoa_pct",
+   "diem_hai_long_tren_5",
+   "ty_le_can_bo_co_chu_ky_so_pct",
+   "so_su_co_attt",
+   "ty_le_can_bo_hoan_thanh_boi_duong_pct",
+   "so_lan_di_lai_tb_moi_ho_so"
+  ],
+  "mo_ta": "Số liệu mô phỏng của Phường Mẫu."
+ },
+ "khao_sat": {
+  "ten": "Khảo sát năng lực số 50 cán bộ (thang 1–5)",
+  "tep": "khao_sat_nang_luc_so_can_bo.csv",
+  "cot": [
+   "ma_can_bo",
+   "nhom",
+   "gioi_tinh",
+   "nhom_tuoi",
+   "su_dung_he_thong_mot_cua",
+   "ky_so_van_ban",
+   "xu_ly_van_ban_dien_tu",
+   "khai_thac_csdl_quoc_gia",
+   "bao_mat_thong_tin",
+   "dung_tro_ly_ao_ai",
+   "phan_tich_so_lieu",
+   "huong_dan_nguoi_dan_dvctt",
+   "san_sang_hoc_truc_tuyen",
+   "ky_nang_can_boi_duong_nhat"
+  ],
+  "mo_ta": "Tự đánh giá 8 kỹ năng; 5 nhóm cán bộ."
+ },
+ "van_ban": {
+  "ten": "Danh mục văn bản pháp lý về Chính phủ số (đã kiểm chứng đến 24/9/2026)",
+  "tep": "danh_muc_van_ban_phap_ly.csv",
+  "cot": [
+   "ky_hieu",
+   "ten_ngan",
+   "tang",
+   "co_quan_ban_hanh",
+   "ngay_ban_hanh",
+   "hieu_luc_tu",
+   "tinh_trang",
+   "van_ban_thay_the_sua_doi",
+   "ghi_chu"
+  ],
+  "mo_ta": "Trích từ CANCU.md của khoá học; tình trạng hiệu lực tính đến 10/2026."
+ },
+ "egdi": {
+  "ten": "EGDI Việt Nam 2014–2024 (Liên Hợp Quốc)",
+  "tep": "egdi_viet_nam_2014_2024.csv",
+  "cot": [
+   "ky_khao_sat",
+   "thu_hang_tren_193",
+   "diem_egdi",
+   "nhom"
+  ],
+  "mo_ta": "Số liệu thật từ UN E-Government Survey."
+ }
+}

@@ -1,0 +1,51 @@
+﻿ma_can_bo,nhom,gioi_tinh,nhom_tuoi,su_dung_he_thong_mot_cua,ky_so_van_ban,xu_ly_van_ban_dien_tu,khai_thac_csdl_quoc_gia,bao_mat_thong_tin,dung_tro_ly_ao_ai,phan_tich_so_lieu,huong_dan_nguoi_dan_dvctt,san_sang_hoc_truc_tuyen,ky_nang_can_boi_duong_nhat
+CB001,Lãnh đạo,Nam,18–30,3,4,4,3,2,1,3,4,Có,dung_tro_ly_ao_ai
+CB002,Lãnh đạo,Nam,46–60,3,2,3,3,2,1,1,1,Không,dung_tro_ly_ao_ai
+CB003,Lãnh đạo,Nữ,31–45,4,3,3,4,2,2,2,3,Không,bao_mat_thong_tin
+CB004,Lãnh đạo,Nữ,31–45,2,5,3,3,2,2,2,2,Không,su_dung_he_thong_mot_cua
+CB005,Lãnh đạo,Nam,18–30,4,3,3,3,2,1,3,3,Có,dung_tro_ly_ao_ai
+CB006,Lãnh đạo,Nam,46–60,3,3,3,2,3,1,2,3,Có,dung_tro_ly_ao_ai
+CB007,Chuyên trách CNTT,Nam,46–60,4,4,4,3,4,5,2,5,Có,phan_tich_so_lieu
+CB008,Chuyên trách CNTT,Nam,31–45,4,4,4,4,4,3,4,4,Không,dung_tro_ly_ao_ai
+CB009,Công chức chuyên môn,Nam,31–45,3,3,3,2,3,3,3,3,Có,khai_thac_csdl_quoc_gia
+CB010,Công chức chuyên môn,Nam,18–30,5,2,3,3,2,2,2,4,Có,ky_so_van_ban
+CB011,Công chức chuyên môn,Nam,31–45,2,3,3,4,4,3,3,3,Có,su_dung_he_thong_mot_cua
+CB012,Công chức chuyên môn,Nữ,18–30,3,4,3,3,3,2,2,2,Không,dung_tro_ly_ao_ai
+CB013,Công chức chuyên môn,Nữ,46–60,2,3,1,3,2,1,3,3,Có,xu_ly_van_ban_dien_tu
+CB014,Công chức chuyên môn,Nữ,46–60,3,2,3,2,2,3,1,2,Không,phan_tich_so_lieu
+CB015,Công chức chuyên môn,Nam,18–30,2,3,3,3,4,2,3,3,Có,su_dung_he_thong_mot_cua
+CB016,Công chức chuyên môn,Nam,31–45,3,4,4,4,2,1,3,2,Có,dung_tro_ly_ao_ai
+CB017,Công chức chuyên môn,Nam,46–60,4,2,3,2,3,1,2,3,Có,dung_tro_ly_ao_ai
+CB018,Công chức chuyên môn,Nam,31–45,3,4,2,1,4,2,2,3,Có,khai_thac_csdl_quoc_gia
+CB019,Công chức chuyên môn,Nữ,18–30,3,4,4,3,3,4,1,3,Có,phan_tich_so_lieu
+CB020,Công chức chuyên môn,Nam,46–60,3,2,4,4,2,1,3,2,Có,dung_tro_ly_ao_ai
+CB021,Công chức chuyên môn,Nữ,31–45,4,3,3,2,3,3,3,4,Không,khai_thac_csdl_quoc_gia
+CB022,Công chức chuyên môn,Nam,46–60,3,3,3,3,3,2,2,3,Có,dung_tro_ly_ao_ai
+CB023,Công chức chuyên môn,Nam,31–45,4,3,2,3,3,2,2,3,Có,xu_ly_van_ban_dien_tu
+CB024,Công chức chuyên môn,Nam,31–45,2,4,3,4,2,3,2,3,Có,su_dung_he_thong_mot_cua
+CB025,Công chức chuyên môn,Nữ,46–60,4,4,3,2,3,1,2,3,Có,dung_tro_ly_ao_ai
+CB026,Công chức chuyên môn,Nữ,46–60,4,4,2,3,3,2,2,2,Có,xu_ly_van_ban_dien_tu
+CB027,Công chức chuyên môn,Nữ,46–60,3,3,2,1,2,3,1,3,Có,khai_thac_csdl_quoc_gia
+CB028,Công chức chuyên môn,Nữ,46–60,3,3,3,3,3,2,3,3,Có,dung_tro_ly_ao_ai
+CB029,Công chức chuyên môn,Nam,18–30,3,4,3,3,3,1,3,2,Có,dung_tro_ly_ao_ai
+CB030,Công chức chuyên môn,Nữ,31–45,4,3,4,3,3,2,4,4,Không,dung_tro_ly_ao_ai
+CB031,Công chức chuyên môn,Nữ,31–45,3,3,3,3,3,3,3,4,Không,su_dung_he_thong_mot_cua
+CB032,Công chức chuyên môn,Nam,31–45,3,4,3,3,4,3,2,4,Không,phan_tich_so_lieu
+CB033,Người hoạt động không chuyên trách,Nữ,31–45,2,3,4,2,3,2,2,2,Có,su_dung_he_thong_mot_cua
+CB034,Người hoạt động không chuyên trách,Nam,31–45,4,2,2,4,2,1,1,3,Có,dung_tro_ly_ao_ai
+CB035,Người hoạt động không chuyên trách,Nam,18–30,2,2,3,2,3,2,2,2,Không,su_dung_he_thong_mot_cua
+CB036,Người hoạt động không chuyên trách,Nam,46–60,3,1,2,1,3,1,1,1,Có,ky_so_van_ban
+CB037,Người hoạt động không chuyên trách,Nữ,31–45,4,1,4,2,4,2,2,2,Có,ky_so_van_ban
+CB038,Người hoạt động không chuyên trách,Nam,31–45,3,2,2,1,2,2,2,2,Không,khai_thac_csdl_quoc_gia
+CB039,Người hoạt động không chuyên trách,Nữ,31–45,4,3,2,3,2,1,2,3,Có,dung_tro_ly_ao_ai
+CB040,Người hoạt động không chuyên trách,Nữ,31–45,2,2,2,1,2,1,2,2,Có,khai_thac_csdl_quoc_gia
+CB041,Người hoạt động không chuyên trách,Nữ,31–45,4,2,5,3,3,1,1,2,Có,dung_tro_ly_ao_ai
+CB042,Người hoạt động không chuyên trách,Nam,31–45,4,2,4,3,2,3,2,2,Có,ky_so_van_ban
+CB043,Hợp đồng/hỗ trợ,Nam,31–45,3,3,4,2,2,3,2,3,Không,khai_thac_csdl_quoc_gia
+CB044,Hợp đồng/hỗ trợ,Nam,18–30,3,4,2,2,4,2,2,3,Có,xu_ly_van_ban_dien_tu
+CB045,Hợp đồng/hỗ trợ,Nữ,31–45,3,3,4,1,3,2,2,3,Có,khai_thac_csdl_quoc_gia
+CB046,Hợp đồng/hỗ trợ,Nữ,46–60,2,3,2,1,2,1,2,3,Có,khai_thac_csdl_quoc_gia
+CB047,Hợp đồng/hỗ trợ,Nam,18–30,4,3,2,3,3,2,3,3,Có,xu_ly_van_ban_dien_tu
+CB048,Hợp đồng/hỗ trợ,Nam,31–45,3,2,3,3,2,2,3,2,Không,ky_so_van_ban
+CB049,Hợp đồng/hỗ trợ,Nam,46–60,2,2,2,2,2,1,3,3,Không,dung_tro_ly_ao_ai
+CB050,Hợp đồng/hỗ trợ,Nữ,18–30,3,3,3,2,2,1,3,3,Có,dung_tro_ly_ao_ai
