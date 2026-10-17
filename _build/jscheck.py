@@ -28,7 +28,7 @@ window.onerror=function(m,src,line,col,err){{ window.__errs.push(m+' @ '+(src||'
 try {{ LAB.boot([]); }} catch(e) {{ window.onerror(String(e), 'boot', 0, 0, e); }}
 if(!window.__errs.length) document.getElementById('log').textContent='OK';
 </script>""", encoding="utf-8")
-    out = subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--window-size=1200,900", "--virtual-time-budget=2000",
+    out = subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--allow-file-access-from-files", "--window-size=1200,900", "--virtual-time-budget=2000",
                           "--dump-dom", page.as_uri()], capture_output=True, text=True, encoding="utf-8", errors="replace").stdout
     m = re.search(r'<pre id="log">(.*?)</pre>', out, re.S)
     txt = html.unescape(m.group(1)).strip() if m else "(khong doc duoc DOM)"
