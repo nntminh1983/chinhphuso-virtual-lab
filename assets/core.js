@@ -307,7 +307,9 @@ chart.bars = function (box, o) {
   niceTicks(ymin, ymax, 4, allInt ? 1 : 0).forEach(v => { ctx.beginPath(); ctx.moveTo(pad.l, Y(v)); ctx.lineTo(W - pad.r, Y(v)); ctx.stroke(); ctx.fillText(o.fmtY ? o.fmtY(v) : String(+v.toFixed(6)), pad.l - 6, Y(v)); });
   ctx.strokeStyle = C.line; ctx.beginPath(); ctx.moveTo(pad.l, pad.t); ctx.lineTo(pad.l, H - pad.b); ctx.lineTo(W - pad.r, H - pad.b); ctx.stroke();
   ctx.textAlign = "center"; ctx.textBaseline = "top"; ctx.fillStyle = C.soft;
-  const every = Math.ceil(n / Math.floor((W - pad.l - pad.r) / 26));
+  /* bỏ bớt nhãn khi chữ rộng hơn ô cột (đo bằng measureText) */
+  const maxw = Math.max(10, ...o.labels.map(l => ctx.measureText(String(l)).width)) + 8;
+  const every = Math.max(1, Math.ceil(maxw / slot));
   o.labels.forEach((l, i) => { if (i % every === 0) ctx.fillText(String(l), pad.l + slot * (i + 0.5), H - pad.b + 5); });
   const rects = [];
   o.series.forEach((s, si) => {
