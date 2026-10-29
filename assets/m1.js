@@ -174,7 +174,7 @@ LAB.module({
           ui.panel("Thang bảy nấc — bấm vào từng nấc", h("div", { class: "small" }, "Đọc từ trái sang phải, từ thấp lên cao: nấc sau kế thừa kết quả của nấc trước."), ladder, detail),
           ui.panel("Bài tập: xếp 10 tình huống ở Phường Mẫu vào đúng nấc",
             h("div", { class: "cols" }, nameF, h("div", { class: "fld" }, h("label", null, h("b", null, "Thao tác")), h("div", { class: "row" }, ui.btn("Chấm bài", cham, "pri"), ui.btn("Làm lại", lamlai), ui.btn("Tải CSV kết quả", taiCSV)))),
-            ui.presets([{ label: "Ví dụ mẫu (một bài làm có 2 lỗi)", apply: vidu }], "Ví dụ mẫu"),
+            ui.presets([{ label: "Ví dụ mẫu (một bài làm có 1 lỗi)", apply: vidu }], "Ví dụ mẫu"),
             exOut,
             ui.warn("Các tình huống là hư cấu, dùng để luyện cách phân loại. Bài làm được lưu trên máy này và có thể tải về để nộp.")));
         paint(); drawEx(); pane.appendChild(root);
